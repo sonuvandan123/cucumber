@@ -13,7 +13,7 @@ import utils.SeleniumDriverOld;
 public class AddProductToCart {
 
    
-	@Before(order=2)
+	//@Before(order=2)   // commented this code, due apsen url launch was impacted
     public void login() {
         // Create an instance of the Login class
         Login loginSteps = new Login();
@@ -27,7 +27,9 @@ public class AddProductToCart {
     }
 	
     @Given("^the user is on the inventory page$")
-    public void userIsOnInventoryPage() {
+    public void userIsOnInventoryPage() throws InterruptedException {
+    	login();
+    	Thread.sleep(5000);
     	String pageTitle=SeleniumDriverOld.getDriver().findElement(By.xpath("//span[@class='title']")).getText();
 		Assert.assertEquals(pageTitle,"Products");
     }

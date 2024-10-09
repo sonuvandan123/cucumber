@@ -1,0 +1,21 @@
+1-If a failing screenshot is already present - then framework is not generating the screenshot again
+may be reason that same name of failing screenshot  - Fixed
+
+2-Screenshot mechanism to be revised   - Fixed 
+3-Need to put logs  - Pending
+4-need to have exception handling  - Pending
+5-Need to fail multiple test cases and verify correct screenshot is attached  - Fixed
+
+
+
+Planned- xlsx data handling
+.properties file for locators
+email report
+
+
+Framework Features:
+Runs parallel tests
+Embed screenshot inside report for failing test cases
+Provided customized report extent report
+Page object model
+

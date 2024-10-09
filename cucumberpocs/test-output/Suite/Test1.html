@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test1</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Sep 30 07:58:52 IST 2024</td>
+<td>Started on:</td><td>Fri Oct 04 17:55:41 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>23 seconds (23318 ms)</td>
+<tr><td>Total time:</td><td>25 seconds (25937 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,60 +76,37 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runners.AddToCartRunner.runScenario()'><b>runScenario</b><br>Test class: runners.AddToCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "correct item is added into cart", "Cart verification"</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@class=&apos;title&apos;]&quot;}
-  (Session info: chrome=129.0.6668.60)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [03cc776e9bc722e55c7c762fcfa0c7ae, findElement {using=xpath, value=//span[@class=&apos;title&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.60, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: C:\Users\pc\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62398}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62398/devtoo..., se:cdpVersion: 129.0.6668.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 03cc776e9bc722e55c7c762fcfa0c7ae
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-	at steps.Login.user_navigate_to_inventory_page(Login.java:49)
-	at ✽.user successfully login and navigate to inventory page(file:///C:/Automation%20Testing/cucumber/Projects/framework/cucumberpocs/src/test/resources/featurefiles/verifyCartItem.feature:8)
-... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1478608820", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1478608820'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@class=&apos;title&apos;]&quot;}
-  (Session info: chrome=129.0.6668.60)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [03cc776e9bc722e55c7c762fcfa0c7ae, findElement {using=xpath, value=//span[@class=&apos;title&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.60, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: C:\Users\pc\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62398}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62398/devtoo..., se:cdpVersion: 129.0.6668.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 03cc776e9bc722e55c7c762fcfa0c7ae
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-	at steps.Login.user_navigate_to_inventory_page(Login.java:49)
-	at ✽.user successfully login and navigate to inventory page(file:///C:/Automation%20Testing/cucumber/Projects/framework/cucumberpocs/src/test/resources/featurefiles/verifyCartItem.feature:8)
+<td title='runners.AddToCartRunner.runScenario()'><b>runScenario</b><br>Test class: runners.AddToCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the Same Product is Added to the Cart", "Add Product to Cart"</td>
+<td><div><pre>java.lang.AssertionError: expected [Sauce Labs Bike Light] but found [Sauce Labs Bike Lights]
+	at steps.AddProductToCart.userShouldSeeProductInCart(AddProductToCart.java:55)
+	at ?.the user should see that the product &quot;Sauce Labs Bike Lights&quot; is in the cart(file:///D:/KT%20OECM/OneDrive%20-%20FUJITSU/Documents/Automation_Codes/Smoke%20Test%20Cases%20Automation/cucumberpocs/src/test/resources/featurefiles/addToCart.feature:9)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1911826019", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1911826019'><pre>java.lang.AssertionError: expected [Sauce Labs Bike Light] but found [Sauce Labs Bike Lights]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at steps.AddProductToCart.userShouldSeeProductInCart(AddProductToCart.java:55)
+	at ?.the user should see that the product &quot;Sauce Labs Bike Lights&quot; is in the cart(file:///D:/KT%20OECM/OneDrive%20-%20FUJITSU/Documents/Automation_Codes/Smoke%20Test%20Cases%20Automation/cucumberpocs/src/test/resources/featurefiles/addToCart.feature:9)
 </pre></div></td>
-<td>21</td>
-<td>runners.AddToCartRunner@606e4010</td></tr>
+<td>24</td>
+<td>runners.AddToCartRunner@24569dba</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runners.AddToCartRunner.runScenario()'><b>runScenario</b><br>Test class: runners.AddToCartRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Cart Item", "Cart verification"</td>
+<td></td>
+<td>19</td>
+<td>runners.AddToCartRunner@24569dba</td></tr>
 </table><p>
 </body>
 </html>

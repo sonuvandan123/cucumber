@@ -12,8 +12,8 @@ public class SeleniumDriverOld {
     private static ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
     private static ThreadLocal<WebDriverWait> waitDriver = new ThreadLocal<WebDriverWait>();
     
-    public final static int TIMEOUT = 3;
-    public final static int PAGE_LOAD_TIMEOUT = 5;
+    public final static int TIMEOUT = 30;
+    public final static int PAGE_LOAD_TIMEOUT = 50;
 
     private SeleniumDriverOld() {
         // Private constructor to prevent instantiation
@@ -24,8 +24,8 @@ public class SeleniumDriverOld {
             // Initialize the WebDriver for the current thread
             WebDriver webDriver = new ChromeDriver(); // Or FirefoxDriver() based on your requirement
             webDriver.manage().window().maximize();
-            webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-            webDriver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
+            webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+            webDriver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
             
             driver.set(webDriver);
             waitDriver.set(new WebDriverWait(webDriver, Duration.ofSeconds(TIMEOUT)));
