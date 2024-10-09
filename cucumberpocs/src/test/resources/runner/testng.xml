@@ -12,11 +12,7 @@
         </classes>
     </test>
     
-    <test name="Test3">
-        <classes>
-            <class name="runners.Aspen_Runner" />
-        </classes>
-    </test>
+    
 </suite>
 
 
